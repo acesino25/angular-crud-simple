@@ -2,37 +2,37 @@
     <form (submit)="addCliente(nombre, apellido, email, dni, nacimiento, telefono, direccion)" style="display: flex; flex-direction: column;">
         <label for="">
             Nombre:
-            <input type="text" name="" id="" #nombre>
+            <input type="text" name="" id="" #nombre required>
         </label>
 
         <label for="">
             Apellido:
-            <input type="text" name="" id="" #apellido>
+            <input type="text" name="" id="" #apellido required>
         </label>
 
         <label for="">
             Email:
-            <input type="email" name="" id="" #email>
+            <input type="email" name="" id="" #email required>
         </label>
 
         <label for="">
             DNI:
-            <input type="text" name="" id="" #dni>
+            <input type="text" name="" id="" #dni required>
         </label>
 
         <label for="">
             Nacimiento:
-            <input type="date" name="" id="" #nacimiento>
+            <input type="date" name="" id="" #nacimiento required>
         </label>
 
         <label for="">
             Telefono:
-            <input type="text" name="" id="" #telefono>
+            <input type="text" name="" id="" #telefono required>
         </label>
 
         <label for="">
             Dirección:
-            <input type="text" name="" id="" #direccion>
+            <input type="text" name="" id="" #direccion required>
         </label>
 
         <button type="submit">Agregar</button>

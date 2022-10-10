@@ -3,12 +3,12 @@
         <div>
             <h1>{{cliente.Nombre}} {{cliente.Apellido}}</h1> 
             <button id="delete" (click)="deleteCliente(cliente)">Eliminar</button>
-            <button id="ocultar" (click)="cliente.hide = !cliente.hide">Ocultar</button>
+            <button id="ocultar" (click)="cliente.hide = !cliente.hide">{{cliente.hide === true ? 'Mostrar' : 'Ocultar'}}</button>
         </div>
         <div [hidden]="cliente.hide">
             <p >{{cliente.Email}}</p>
-            <p >{{cliente.Dni}}</p>
-            <p >{{cliente.Nacimiento}}</p>
+            <p >{{cliente.Dni | number:'1.0':'en-US'}}</p>
+            <p >{{cliente.Nacimiento | date}}</p>
             <p >{{cliente.Telefono}}</p>
             <p >{{cliente.Direccion}}</p>
         </div>
